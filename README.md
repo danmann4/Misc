@@ -1,4 +1,4 @@
-# Specral Processing and Gradient Descent Example
+# Specral Processing Algorithms, Gradient Descent Example, and Advent of Code Solutions!
 
 ## Spectral background and cosmic ray removal
 
@@ -17,3 +17,7 @@ These are just two algorithms that came quite in handy for spectral signal proce
 ## Gradient descent multivariate ordinary least squares linear regression
 Gradient Descent Example.py is a simple example of using python to create a housing price predicting function 
 based on various inputs. The data for this example is contained in the Housingprices.csv file.
+
+## Advent of Code Solutions
+Just a collection of some of my solutions to the Advent of Code challenges from 2020 and 2021 so far.
+A puzzle a day keeps the doctor away...
