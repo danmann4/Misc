@@ -59,7 +59,8 @@ ypred = Xnorm.dot(theta0) # predicted prices form the initial guess
 # =============================================================================
 
 # Now lets define our optimization functions
-# The cost function is the sum of squared residuals for the predicted fit vs. the actual data. This is a value we wish to minimuze in our case.
+# The cost function is the sum of squared residuals for the predicted fit vs. the actual data.
+# This is a value we wish to minimize in our case.
 def cost(theta):
     J = np.sum((Xnorm.dot(theta)-ynorm)**2,axis=0)[0]
     return J
