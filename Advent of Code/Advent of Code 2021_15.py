@@ -1,17 +1,18 @@
-import heapq # Use heapq to make the binary
+import heapq # Use heapq to make the binary tree priority queue
 from collections import defaultdict
 
-#Going to use version of Dijkstra's shortest path to find the minimum risk getting to the bottom right
-#Soln based on example from u/joshduncan
+#Going to use version of Dijkstra's/A* shortest path to find the minimum risk getting to the bottom right.
+#Soln based on example from u/joshduncan, but tried to include a heuristic manhattan distance component
+#to be more similar to A*.
 
 def Solution(maze, squares):
     size_row, size_col = len(maze)*squares, len(maze[0])*squares
     risk_record = defaultdict(int) #defaultdict so we don't get any key errors
-    priority_Q = [(0, 0, 0)]
+    priority_Q = [(0, 0, 0, 0)]
     heapq.heapify(priority_Q)
     visited = set() # Nodes we've already hit
     while len(priority_Q) > 0:
-        risk, row, col = heapq.heappop(priority_Q) #indicies will be risk, row, col
+        h_risk, risk, row, col = heapq.heappop(priority_Q) #indicies will be heuristic, risk, row, col
         if (row, col) in visited: # Skip the node if we've already been there
             continue
         visited.add((row, col))
@@ -30,9 +31,12 @@ def Solution(maze, squares):
             r = next_row % int((size_row/squares))
             c = next_col % int((size_col/squares))
             boost_row = next_row // int((size_row/squares))
-            boost_col = next_col // int((size_col / squares))
+            boost_col = next_col // int((size_col/squares))
             neighbour_risk = (maze[r][c] + boost_row + boost_col - 1) % 9 + 1
-            heapq.heappush(priority_Q, (risk + neighbour_risk, next_row, next_col))
+            new_total_risk = risk + neighbour_risk
+            #h_risk will just be the normal risk but incentivised to check nodes closer to the bottom right.
+            h_risk = new_total_risk + size_row + size_col - next_row - next_col
+            heapq.heappush(priority_Q, (h_risk, new_total_risk, next_row, next_col))
     return risk_record[(size_row - 1, size_col - 1)]
 
 #Import the input
