@@ -28,14 +28,14 @@ def Solution(maze, squares):
                 continue # skip if the index is beyond boundaries
 
             # Node risk is its value, plus the square multiple (boost for row and col on entering a deeper square), wrapped from 9 back
-            r = next_row % int((size_row/squares))
-            c = next_col % int((size_col/squares))
-            boost_row = next_row // int((size_row/squares))
-            boost_col = next_col // int((size_col/squares))
+            r = next_row % (size_row//squares)
+            c = next_col % (size_col//squares)
+            boost_row = next_row // (size_row//squares)
+            boost_col = next_col // (size_col//squares)
             neighbour_risk = (maze[r][c] + boost_row + boost_col - 1) % 9 + 1
             new_total_risk = risk + neighbour_risk
             #h_risk will just be the normal risk but incentivised to check nodes closer to the bottom right.
-            h_risk = new_total_risk + size_row + size_col - next_row - next_col
+            h_risk = new_total_risk + size_row - next_row + size_col - next_col
             heapq.heappush(priority_Q, (h_risk, new_total_risk, next_row, next_col))
     return risk_record[(size_row - 1, size_col - 1)]
 
@@ -43,7 +43,7 @@ def Solution(maze, squares):
 with open('2021 inputs/Day 15.txt') as f:
     f = f.read().splitlines()
 maze = [[int(x) for x in a] for a in f]
+
 print('Part 1 Solution: ' + str(Solution(maze, 1)))
 print('Part 2 Solution: ' + str(Solution(maze, 5)))
-
 
