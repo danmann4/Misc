@@ -1,4 +1,4 @@
-# Specral Processing Algorithms, data analysis Examples, and Advent of Code Solutions!
+# Specral Processing Algorithms, Data Analysis Examples, and Advent of Code Solutions!
 
 ## Spectral background and cosmic ray removal
 
