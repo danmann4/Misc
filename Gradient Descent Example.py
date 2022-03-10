@@ -1,5 +1,13 @@
 # This is a script to conduct a multivariate linear regression on housing prices
-# using gradient descent based on various inputs. Similar to lesson by Euan Russano. 
+# using gradient descent based on various inputs. Data is of the form:
+
+#Home	Price	SqFt	Bedrooms	Bathrooms	Offers	Brick	Neighborhood
+#1	    114300	1790	2	        2	        2	    No	    1
+#2	    114200	2030	4	        2	        3	    No	    1
+#3	    114800	1740	3	        2	        1	    No	    1
+#4	    94700	1980	3	        2	        3	    No	    1
+#.......
+
 
 import numpy as np
 import pandas as pd 
@@ -123,3 +131,5 @@ axs[1,1].plot(x[:,3],ypred,'d')
 # To show some statistical signifigance in the fit, we should prove that the 
 # 95% confidence interval for each coefficient determined doesn't include 0. 
 # This is easily facilitated with a library like scikit-learn if necessary.
+# We could also instead use a bayesian linear regression and some sampling techniques like
+# MCMC to get a credibility interval for each coefficient determined.

@@ -1,4 +1,4 @@
-# Specral Processing Algorithms, Gradient Descent Example, and Advent of Code Solutions!
+# Specral Processing Algorithms, data analysis Examples, and Advent of Code Solutions!
 
 ## Spectral background and cosmic ray removal
 
@@ -13,6 +13,10 @@ These are just two algorithms that came quite in handy for spectral signal proce
     2. removeCosmicRays.m is a matlab function to remove cosmic rays from CCD measurements.
        Depending on the image capture duration the CCD camera can get quite saturated with noise from cosmic rays tripping capacitors. 
        This function will facilitate distinguishing cosmic rays from the rest of the data, and ultimately removing them from the data set.
+
+## Bayesian Linear Regression
+Bayesian Linear Regression.ipynb is an example of how we can use python to conduct Bayesian linear regressions. In this case its used to predict
+the uncertainty around estimated housing prices. The data set used (Housingprices.csv) is the same as that for the gradient descent example.  
 
 ## Gradient descent multivariate ordinary least squares linear regression
 Gradient Descent Example.py is a simple example of using python to create a housing price predicting function 
