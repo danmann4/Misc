@@ -8,8 +8,6 @@ the uncertainty around estimated housing prices. The data set used (Housingprice
 Gradient Descent Example.py is a simple example of using python to create a housing price predicting function 
 based on various inputs. The data for this example is contained in the Housingprices.csv file.
 
-# Specral Processing Algorithms, Data Analysis Examples, and Advent of Code Solutions!
-
 ## Spectral background and cosmic ray removal
 
 These are just two algorithms that came quite in handy for spectral signal processing...
