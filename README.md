@@ -4,6 +4,12 @@
 Bayesian Linear Regression.ipynb is an example of how we can use python to conduct Bayesian linear regressions. In this case its used to predict
 the uncertainty around estimated housing prices. The data set used (Housingprices.csv) is the same as that for the gradient descent example.  
 
+## Digit Model
+This is a tensorflow neural network for discerning images of hand-drawn digits. 
+In this use case we want to identify digits that are only within drawn shapes in an image (test_image.jpg).
+"digit model.ipynb" is the script to create the neural network from the built in tensorflow MNIST database and examples. 
+"Image_process.ipynb" is the image processing script to feed the appropriate numbers into the digit_model.
+
 ## Gradient descent multivariate ordinary least squares linear regression
 Gradient Descent Example.py is a simple example of using python to create a housing price predicting function 
 based on various inputs. The data for this example is contained in the Housingprices.csv file.
