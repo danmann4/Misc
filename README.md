@@ -9,6 +9,11 @@ This folder just contains some scripts for various dataset processing i've done.
    In this case its used to predict the uncertainty around estimated housing prices. 
    The data set used (Housingprices.csv) is the same as that for the gradient descent example.  
 
+   ### AtoB Example
+   This is a typical A/B case study where we are trying to make some conclusions about proportions and continuous variable distributions for an online dataset. 
+   This showcases our classic statistical tool set of power analysis, ANOVAs, post-hoc testing, etc.
+
+
    ### Spectral Processing
 
    These are just two algorithms that came quite in handy for spectral signal processing...
