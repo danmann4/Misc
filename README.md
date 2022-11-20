@@ -1,11 +1,11 @@
 # Welcome to my humble GIT abode. Lets give you a walk through...
 
 ## Data Analysis Folder
-This folder just contains some scripts for various dataset processing i've done. 
+This folder just contains some examples of how we can go about data cleaning, visualization, hypothesis testing, modeling incertainty, etc.
 
    ### Bayesian Linear Regression
    Bayesian Linear Regression.ipynb is an example of how we can use python to conduct Bayesian linear regressions. 
-   This is primarity to showcase more advanced statistical approaches to capturing uncertainty in your typical multiple regressions. 
+   This is primarity to showcase more advanced statistical approaches to capturing uncertainty in your typical multiple regressions.
    In this case its used to predict the uncertainty around estimated housing prices. 
    The data set used (Housingprices.csv) is the same as that for the gradient descent example.  
 
@@ -13,6 +13,8 @@ This folder just contains some scripts for various dataset processing i've done.
    This is a typical A/B case study where we are trying to make some conclusions about proportions and continuous variable distributions for an online dataset. 
    This showcases our classic statistical tool set of power analysis, ANOVAs, post-hoc testing, etc.
 
+   ### Visualization Take Home
+   This is a generic take home example from Towards Data Science where we go about generating a fake dataset, then conduct some analysis on it. We are more focused on visualizing the data set for this example, and getting a feel for what we can make some clonclusions about. 
 
    ### Spectral Processing
 
