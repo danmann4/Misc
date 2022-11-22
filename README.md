@@ -1,7 +1,7 @@
 # Welcome to my humble GIT abode. Lets give you a walk through...
 
 ## Data Analysis Folder
-This folder just contains some examples of how we can go about data cleaning, visualization, hypothesis testing, modeling incertainty, etc.
+This folder just contains some examples of how we can go about data cleaning, visualization, hypothesis testing, modeling uncertainty, etc.
 
    ### Bayesian Linear Regression
    Bayesian Linear Regression.ipynb is an example of how we can use python to conduct Bayesian linear regressions. 
