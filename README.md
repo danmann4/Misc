@@ -39,6 +39,10 @@ This folder contains some examples of more machine learning oriented analyses I 
    "digit model.ipynb" is the script to create the neural network from the built in tensorflow MNIST database and examples. 
    "Image_process.ipynb" is the image processing script to feed the appropriate numbers into the digit_model.
 
+   ### IMDB Sentiment Classification
+   This is an example of how to use some Natural Language Processing (NLP) methodologies in order to predict movie review sentiments. 
+   We use some different supervised classification techniques to cross-validate and select the best predictive model for our scenario. This example uses the generic IMDB reviews dataset from Kaggle. 
+
    ### Gradient Descent Algorithm
    Gradient Descent Example.py is a simple example of using python to create a housing price predicting function 
    based on various inputs. The data for this example is contained in the Housingprices.csv file (Data Analysis Folder).
